@@ -4,5 +4,11 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserConcern 
   include DefaultPageContent
+
+	##before_action :set_copyright
+
+	##def set_copyright
+		##@copyright = RandallViewTool::Renderer.copyright 'Louis Randall', 'All rights reserved'
+	##end
 end
 
