@@ -10,6 +10,10 @@ include Placeholder
 		where(subtitle: "Angular")
 	end
 
+	def self.by_position
+		Portfolio.order("position ASC")
+	end
+
 	after_initialize :set_defaults
 
 	def set_defaults
