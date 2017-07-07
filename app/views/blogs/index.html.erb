@@ -1,6 +1,9 @@
 <div class="col-sm-8 blog-main">
-
-     <%= render @blogs %>
+<% if logged_in?(:site_admin) %>
+     <%= render @blogs.newest_first %>
+<% else %>
+	<%= render @blogs.published.newest_first %>
+<% end %>
 
      <%= paginate @blogs %>
 
