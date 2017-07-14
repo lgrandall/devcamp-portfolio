@@ -1,20 +1,10 @@
 
 <div class="blog-post">
   <h2 class="blog-post-title"><%= link_to blog.title.upcase, blog %></h2>
-	
-  <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
-  
-  <% if logged_in?(:site_admin) %>
-    <nav class="breadcrumb">
-    <span class="pull-right">
-      <%= link_to fa_icon('file-text'), toggle_status_blog_path(blog) %>
-      <%= link_to fa_icon('pencil-square'), edit_blog_path(blog) %>
-      <%= link_to fa_icon('trash-o'), blog, method: :delete, data: { confirm: 'Are you sure?' } %>
-      </span>
-    </nav>
-  <% end %>
 
-  <p>
+  <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
+	
+  <%= render partial: "blogs/admin_actions", locals: { blog: blog} %>
     <%= blog.body %>
   </p>
 </div>
