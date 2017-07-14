@@ -11,7 +11,7 @@
 
     <span class="pull-right">
       <%= link_to fa_icon('pencil-square-o'), edit_blog_path(@blog) if logged_in?(:site_admin) %>
-      <%= link_to fa_icon('trash-o'), blog_path, method: :delete, data: { confirm: 'Are you sure?'} if logged_in?(:site_admin) %>
+      <%= link_to fa_icon('trash-o'), blog_path(@blog), method: :delete, data: { confirm: 'Are you sure?'} if logged_in?(:site_admin) %>
     </span>
   </nav>
 
