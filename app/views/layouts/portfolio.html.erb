@@ -7,6 +7,8 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
+    <%= favicon_link_tag 'favicons/other_favicon.ico' %>
+
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -26,6 +28,5 @@
 
      <%= alerts %>
 
-    <%= source_helper("application") %>
   </body>
 </html>
