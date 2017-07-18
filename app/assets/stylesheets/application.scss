@@ -218,7 +218,20 @@ body {
   padding: 10px;
 }
 
+.app-card-container {
+  color: black;
+  padding: 40px;
+  text-align: left;
+}
 
+.app-card-container > .card {
+  padding: 20px;
+}
+
+.card-block > .collapse {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 
 

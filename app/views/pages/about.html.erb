@@ -1,15 +1,68 @@
-<h1>Who am I?</h1>
+<div class="app-card-container">
+	<div class="card">
+			<h1>Who am I?</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<%= image_tag "profile.jpg", width: 300, alt: "Profile Image", class: "about-image" %>
+			</div>
+			<div class="col-md-8">
 
-
-<div class="row">
-	<div class="col-md-4">
-		<%= image_tag "profile.jpg", width: 300, alt: "Profile Image" %>
-	</div>
-	<div class="col-md-8">
-		<div class="card">
-			<div class="card-block">	
 				<p>I'm just an down low, everyday, normal guy, doing his best to find his way in the world</p>
-			<div>
+			    <p>With over a decade of development experience in a number of industries I realized that the typical product creation process between clients and developers was flawed. All too often developers rarely communicate to clients throughout the development stage, resulting in a final product that fails to reach the goal sought by the customer and end user.</p>
+
+    			<p>For this reason I decided to utilize a completely different development pattern that focuses on highly focused communication and transparent design patterns. When I take on a project not only do I work to craft the application according to the client's specifications, I give daily updates to ensure that the project is aligning properly with the client's goals. The end result is the right product, delivered on time, and on budget.</p>
+
+    			<p>
+	    			<button
+	    				class="btn btn-primary"
+	    				type="button"
+	    				data-toggle="collapse"
+	    				data-target="#jobHistory"
+	    				aria-expanded="false"
+	    				aria-controler="jobHistory"
+	    			>
+	    				Job History
+	    			</button>
+
+	    			<button
+	    				class="btn btn-primary"
+	    				type="button"
+	    				data-toggle="collapse"
+	    				data-target="#skills"
+	    				aria-expanded="false"
+	    				aria-controller="skills"
+	    			>
+	    				Skills
+	    			</button>
+	    		</p>
+
+	    			<p>
+		    			<div class="collapse" id="jobHistory">
+		    				<div class="card card-block">
+		    					Kier & Wright
+		    				</div>
+		    				<div class="card card-block">
+		    					Chipotle
+		    				</div>
+		    				<div class="card card-block">
+		    					Mahalo
+		    				</div>
+		    			</div>
+		    		</p>
+
+	    			<p>
+	    				<div class="collapse" id="skills">
+	    					<div class="card card-block">
+	    					The coolest of them
+	    					</div>
+	    				</div>
+	    			</p>
+			</div>
 		</div>
+
 	</div>
 </div>
+
+
+
+
